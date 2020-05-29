@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="index.js"> </script>
+        <link href="style.css" rel="stylesheet">
+        <title> Clicker the Game </title>
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="info">
+            <p class="points"> Баланс: <span class="count_of_points">0</span></p>
+            <p class="booster_lvl"> Уровень прокачки: <span class="count_of_boost">0</span></p>
+            <p class="strength"> UI за клик: <span class="strength_of_click">1</span> </p>
+            <p> UI за сек: <span class="Points_per_second">0 </span>UI/sec</p>
+        </div>
+        <button id="click_button" onclick="Click()"> ЖМИ НА МЕНЯ! </button> 
+        <div id="proc">
+        <button id="boost" onclick="Boost_up()"> За клик
+            <p class="description">Стоимость: <span class="cost_points">100</span> UI</p>
+            <p class="description">Купить (+<span class="boost_strength">1</span>)</p>
+        </button>
+        <button id="PPC_boost" onclick="PPC_up()"> В сек
+        <p class="description_2">Стоимость: <span class="cost_up_PPC">300</span> UI</p>
+        <p class="description_2">Купить (+<span class="strength_PPC">1</span>UI/s)</p>    
+        </button>
+        </div>
+    </body>
+</html>
